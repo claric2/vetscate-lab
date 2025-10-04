@@ -1,0 +1,34 @@
+name: "Caso de Prueba"
+description: "Plantilla para QA"
+title: "[TC] - "
+labels: ["test-case", "qa"]
+body:
+  - type: input
+    id: titulo
+    attributes:
+      label: "Título del test"
+  - type: textarea
+    id: precondiciones
+    attributes:
+      label: "Pre-condiciones"
+  - type: textarea
+    id: pasos
+    attributes:
+      label: "Pasos"
+      placeholder: "1. ...\n2. ...\n3. ..."
+  - type: textarea
+    id: esperado
+    attributes:
+      label: "Resultado esperado"
+  - type: textarea
+    id: resultado
+    attributes:
+      label: "Resultado obtenido"
+  - type: dropdown
+    id: estado
+    attributes:
+      label: "Estado"
+      options:
+        - Passed
+        - Failed
+        - Blocked
